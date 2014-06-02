@@ -9,18 +9,18 @@
     </h:head>
     <h:body>
 
-        <h1>GuestBook TEST</h1>
+        <h1>Add Guest: #{addGuestController}</h1>
         
        <p>
        <h:form>
       <h:panelGrid  id="panel" columns="2" >
-        Name: <h:inputText required="true" value="#{AddGuestController.name}" label="Firstname" /><br/>
-        Email: <h:inputText required="true"  value="#{AddGuestController.email}" label="Secondname" /><br/>
-        Address: <h:inputText required="true"  value="#{AddGuestController.address}" label="Address" /><br/>
-        Quantity: <h:inputText required="true"  value="#{AddGuestController.qty}" label="Quantity" /><br/>
+        Name: <h:inputText required="true" value="#{addGuestController.name}" label="Firstname" /><br/>
+        Email: <h:inputText required="true"  value="#{addGuestController.email}" label="Secondname" /><br/>
+        Address: <h:inputText required="true"  value="#{addGuestController.address}" label="Address" /><br/>
+        Quantity: <h:inputText required="true"  value="#{addGuestController.qty}" label="Quantity" /><br/>
         <f:facet name="footer">
           <h:panelGroup style="display:block; text-align:center">
-            <h:commandButton action="#{AddGuestController.addGuest}" value="Go.." />
+            <h:commandButton action="#{addGuestController.addGuest}" value="Go.." />
           </h:panelGroup>
         </f:facet>  
       </h:panelGrid>
